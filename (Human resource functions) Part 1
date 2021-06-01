@@ -1,1 +1,47 @@
+Human Resources
+START
+         DOWHILE(NOT ESC)
+            ID _NUMBER = 0, DATE _OF _HIRE = 0, NAME=0, SURNAME=0, POSITIONS=0, WAGE=0, STATUS=0
+            Employee = {ID _NUMBER, DATE _OF _HIRE, NAME, SURNAME, POSITIONS, WAGE, STATUS}
+Prompt Employee record 
+Get Employee record
+          ENDO
+End
 
+
+Pay roll
+START
+idNumber=0 , monthSalary = 0, workedHours=0, hourlyRate = 25 , OverTime = 0, overtimeRate = 10
+   DOWHILE (NOT ESC)
+	Prompt idNumber
+	Get idNumber
+	Prompt workedHours
+	GET workedHours
+		If (workedHours > 40) then
+		       Overtime = workedHours – 40
+		Endif
+	workedHours = workedHours - Overtime
+	monthSalary = ( workedHours * hourlyRate) + (overTime * overtimeRate)
+	PRINT idNumber “has earned the salary of”month Salary
+    ENDO
+END
+
+
+Leave days
+START
+  DOWHILE (NOT ESC)
+      leaveDays  = 0 , hoursWorked = 0
+      PRINT”How many hours worked?”
+      GET hoursWorked
+            If (hoursWorked < 35) then
+                 Print “Not eligible for minimum leave days”
+		Endif 
+      Print “How many leave days?”
+      Get leaveDays
+	If (leaveDays > 4) and hoursWorked < 40) then
+                   Print “You can only have 2 leave days”
+	Else 
+	     Print “You are on leave for” leaveDays “days.”
+	Endif
+  ENDO
+End 
