@@ -1,0 +1,15 @@
+START
+ DOWHILE (NOT ‐1)
+ productId= 0, amountDue = 0 , quantityItem = 0 , cashTotal = 0 
+DOWHILE (NOT ESC) productid= 0 amountDue = 0 quantityItem = 0 cashTotal = 0 
+PROMPT FOR productId
+ GET productId
+ PROMPT quantityItem
+ GET quantityItem 
+if (productId == 12212122) then amountDue = 200 *Quantity
+else if (productiId== 21112322) then amountDue = 287 *Quantity
+else if (productId == 2554555) then amountDue = 237 * Quantity
+else if (productId == 2222255545) then amountDue = 100*Quantity
+else PRINT “ERROR” endif endif endif
+endif
+cashTotal = amountDue + cashTotal PRINT “THE AMOUNT DUE IS,” cashTotal EndoEndo END
